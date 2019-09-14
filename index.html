@@ -20,6 +20,15 @@
             font-size: 24px;
 
         }
+        
+        table{
+            border-collapse: collapse;
+        }
+
+        h1{
+            font-size: 35px;
+        }
+
         h1, h2{
             text-align: center;
         }
@@ -30,6 +39,10 @@
             margin: 0 auto 0 auto;
             background-color: #fff;
             box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
+        }
+
+        th,td{
+            border: 1px solid grey;
         }
     </style>
 </head>
@@ -49,6 +62,31 @@
         </p>
 
         <h2>A JS-based Spreadshhet</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Cost</th>
+                    <th>Price</th>
+                    <th>Profit</th>
+                    <th>Units Projected</th>
+                    <th>Total Sales</th>    
+                    <th>Total Profit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Chocolate Raisins</td>
+                    <td>20.95</td>
+                    <td>35.95</td>
+                    <td>15</td>
+                    <td>700</td>
+                    <td>25165</td>
+                    <td>10500</td>
+                </tr>
+            </tbody>
+        </table>
 
         <p><span class="capital"> L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Facere
             similique dolorem eligendi dolor reprehenderit porro iusto doloremque
