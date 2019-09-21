@@ -1,4 +1,4 @@
-console.log("Running");
+
 
 let unitCol = document.querySelector("#units");
 
@@ -18,7 +18,7 @@ console.log(unitCol);
 // HTMLElement.addEventListener(EVENT:String,CALLBACK:Function);
 
 
-unitCol.addEventListener("input",handleClick);
+if(unitCol){unitCol.addEventListener("input",handleClick)} ;
 
 function handleClick(e){
    //G=E*D
@@ -48,12 +48,34 @@ function handleClick(e){
         G.textContent= valE*valD;
     }
 
+    let data = JSON.parse(jsonText);
+    console.log(data);
+   
+
   
-    
+
 
    
 }
 
+let tr =   `
+<tr>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+`;
+
+// 1) get tbody
+const tbody = document.querySelector("#excel-table tbody")
+
+// 2) append element to tbody
+tbody.innerHTML +=tr;
 
 
 
