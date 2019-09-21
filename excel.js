@@ -35,13 +35,21 @@ function handleClick(e){
     let valD = D.textContent;
 
     valE = parseFloat(valE);
-    valD = parseInt(valD);
+    valD = parseFloat(valD);
 
     console.log(typeof valE, typeof valD)
 
     console.log("G = ", valE*valD);
+
+    console.log(Number.isNaN(valE));
+    if(Number.isNaN(valE)){
+        G.textContent="";
+    }else{
+        G.textContent= valE*valD;
+    }
+
+  
     
-    G.textContent= valE*valD;
 
    
 }
